@@ -6,7 +6,7 @@ stages{
 stage(scm){
 steps{
 checkout([$class: 'GitSCM', 
-branches: [[name: '*/feat01']], 
+branches: [[name: '*/$branch']], 
 userRemoteConfigs: [[credentialsId: 'e9a4298d-cda5-432b-8729-77cff44660ae', url: 'https://github.com/Sindhu-Project/mavenrepo.git']]
 ])
 
